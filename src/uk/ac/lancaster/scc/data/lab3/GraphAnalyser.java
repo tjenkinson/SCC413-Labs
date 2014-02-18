@@ -19,8 +19,7 @@ public class GraphAnalyser {
         // load the graph from the file
 
         // point the graph location at the file
-//        String fileLocation = "/Users/mrowe/Documents/Teaching/SCC413/Labs/Lab3/stage1-out.ego-facebook.tsv";
-        String fileLocation = "/Users/mrowe/Documents/Teaching/SCC413/Labs/Lab3/stage2-out.ucidata-zachary.tsv";
+        String fileLocation = "";
 
         // build the graph object from each edge in the file
 
@@ -60,39 +59,9 @@ public class GraphAnalyser {
             }
 
             // measure the in-degree of a given node - you need to adapt this part for exercise 1 to return all nodes with an indegree greater than 0
-//            String nodeID = "1";
-//            int nodeInDegree = graph.inDegree(nodeID);
-//            System.out.println(nodeID + " = " + nodeInDegree);
-//
-//
-//            // measure the clustering coefficient of nodes within the network
-//            Map<String,Double> clusteringCoefficients = Metrics.clusteringCoefficients(graph);
-//            for (String node : clusteringCoefficients.keySet()) {
-//                if(clusteringCoefficients.get(node) > 0)
-//                    System.out.println(node + " = " + clusteringCoefficients.get(node));
-//            }
-
-            // which node is the most central in the network
-//            BetweennessCentrality centrality = new BetweennessCentrality(graph);
-//            for (String node : graph.getVertices()) {
-//                System.out.println(node + " = " + centrality.getVertexScore(node));
-//            }
-
-            double maxValue = 0;
-            String maxNode = "";
-            ClosenessCentrality centrality = new ClosenessCentrality(graph);
-            for (String node : graph.getVertices()) {
-                double score = centrality.getVertexScore(node);
-
-                System.out.println(node + " = " + score);
-
-                if(score > maxValue) {
-                    maxNode = node;
-                    maxValue = score;
-                }
-            }
-
-            System.out.println("Max node = " + maxNode);
+            String nodeID = "1";
+            int nodeInDegree = graph.inDegree(nodeID);
+            System.out.println(nodeID + " = " + nodeInDegree);
 
 
         } catch (IOException e) {

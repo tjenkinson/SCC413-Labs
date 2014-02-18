@@ -1,4 +1,4 @@
-package uk.ac.lancacaster.scc.data.lab2;
+package uk.ac.lancaster.scc.data.lab2;
 
 import com.hp.hpl.jena.query.QueryExecution;
 import com.hp.hpl.jena.query.QueryExecutionFactory;

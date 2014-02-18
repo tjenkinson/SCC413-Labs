@@ -1,16 +1,12 @@
-package uk.ac.lancaster.scc.data;
+package uk.ac.lancaster.scc.data.lab3;
 
-import edu.uci.ics.jung.algorithms.metrics.Metrics;
-import edu.uci.ics.jung.algorithms.scoring.BetweennessCentrality;
 import edu.uci.ics.jung.algorithms.scoring.ClosenessCentrality;
-import edu.uci.ics.jung.algorithms.scoring.HITS;
 import edu.uci.ics.jung.graph.Graph;
 import edu.uci.ics.jung.graph.SparseMultigraph;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Map;
 
 /**
  * Author: Matthew Rowe

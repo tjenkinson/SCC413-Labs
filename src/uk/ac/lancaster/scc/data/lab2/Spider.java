@@ -1,4 +1,4 @@
-package uk.ac.lancacaster.scc.data.lab2;
+package uk.ac.lancaster.scc.data.lab2;
 
 import java.util.Arrays;
 import java.util.HashSet;

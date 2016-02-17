@@ -44,10 +44,10 @@ public class GraphAnalyser {
                 String targetNode = tokens[1];  // to
 
                 // add the nodes to the graph object
-                if(graph.containsVertex(sourceNode))
+                if(!graph.containsVertex(sourceNode))
                     graph.addVertex(sourceNode);
 
-                if(graph.containsVertex(targetNode))
+                if(!graph.containsVertex(targetNode))
                     graph.addVertex(targetNode);
 
                 // add the edge to the graph
